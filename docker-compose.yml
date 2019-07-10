@@ -16,4 +16,5 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+#   override CMD from Dockerfile.dev
     command: ["npm", "run", "test"]
